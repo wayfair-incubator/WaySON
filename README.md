@@ -3,36 +3,6 @@
 [![Wayfair.Text.Json Version](https://img.shields.io/badge/Wayfair.Text.Json-0.1.0-7f187f.svg)](https://github.com/wayfair-incubator/wayfair-text-json/blob/main/CHANGELOG.md)
 [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.0-4baaaa.svg)](CODE_OF_CONDUCT.md)
 
-<!-- TABLE OF CONTENTS -->
-<details>
-  <summary>Table of Contents</summary>
-  <ol>
-    <li>
-      <a href="#about-this-project">About The Project</a>
-      <ul>
-        <li><a href="#notable-features">Notable Features</a></li>
-      </ul>
-    </li>
-    <li>
-      <a href="#installation">Installation</a>
-    </li>
-    <li>
-        <a href="#usage">Usage</a>
-        <ul>
-            <li><a href="#wayfairjsonserializer">WayfairJsonSerializer</a></li>
-            <li><a href="#mvc">MVC</a></li>
-            <li><a href="#jsonbinder">JsonBinder</a></li>
-        </ul>
-    </li>
-    <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#license">License</a></li>
-    <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgements">Acknowledgements</a></li>
-    <li><a href="#references">References</a></li>
-  </ol>
-</details>
-
 ## About this project
 
 Extends the basic JSON Serialization/Deserialization functionality of [System.Text.Json](https://docs.microsoft.com/en-us/dotnet/api/system.text.json?view=net-5.0).
@@ -138,7 +108,6 @@ Project Link: [https://github.com/wayfair-incubator/wayfair-text-json](https://g
 
 This README was adapted from
 [https://github.com/othneildrew/Best-README-Template](https://github.com/othneildrew/Best-README-Template).
-
 
 ## References
 
