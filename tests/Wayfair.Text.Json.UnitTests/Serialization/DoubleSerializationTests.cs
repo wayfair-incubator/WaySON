@@ -110,7 +110,7 @@ namespace Wayfair.Text.Json.UnitTests.Serialization
             var serialized = WayfairJsonSerializer.Serialize(testDouble);
 
             // assert
-            serialized.Should().Be("0.8888888888888888", "because it is rounded to the max (16) significant digits");
+            serialized.Should().Be("0.8888888888888888", "because it is truncated to the max (16) significant digits");
         }
 
         [Test]

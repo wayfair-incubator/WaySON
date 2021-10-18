@@ -9,11 +9,16 @@ namespace Wayfair.Text.Json.Converters
     internal sealed class DateTimeOffsetConverter : FormattableJsonConverter<DateTimeOffset>
     {
         /// <inheritdoc />
-        public override DateTimeOffset Read(ref Utf8JsonReader reader, Type typeToConvert, JsonSerializerOptions options)
+        public override DateTimeOffset Read(
+            ref Utf8JsonReader reader,
+            Type typeToConvert,
+            JsonSerializerOptions options)
         {
             if (FormatProvider is null || Format is null)
             {
-                return reader.TryGetDateTimeOffset(out var dto) ? dto : DateTimeOffset.Parse(reader.GetString(), FormatProvider);
+                return reader.TryGetDateTimeOffset(out var dto)
+                    ? dto
+                    : DateTimeOffset.Parse(reader.GetString(), FormatProvider);
             }
 
             return DateTimeOffset.ParseExact(reader.GetString(), Format, FormatProvider);
