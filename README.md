@@ -111,8 +111,8 @@ This README was adapted from
 
 ## References
 
-- [Microsoft Devblog about System.Text.Json](https://devblogs.microsoft.com/dotnet/try-the-new-system-text-json-apis/)
-- [Microsoft Docs on System.Text.Json](https://docs.microsoft.com/en-us/dotnet/api/system.text.json?view=netcore-3.0)
-- [Example Custom Converters](https://github.com/steveharter/dotnet_corefx/tree/d5e447f1d998b42c1a87258dddceb9aaf35ebe8b/src/System.Text.Json/tests/Serialization)
-- [Examples discussion](https://github.com/dotnet/corefx/issues/36639)
-- [Microsoft Docs on how to Write Custom Converters](https://docs.microsoft.com/en-us/dotnet/standard/serialization/system-text-json-converters-how-to?view=netcore-3.1)
+* [Microsoft Devblog about System.Text.Json](https://devblogs.microsoft.com/dotnet/try-the-new-system-text-json-apis/)
+* [Microsoft Docs on System.Text.Json](https://docs.microsoft.com/en-us/dotnet/api/system.text.json?view=netcore-3.0)
+* [Example Custom Converters](https://github.com/steveharter/dotnet_corefx/tree/d5e447f1d998b42c1a87258dddceb9aaf35ebe8b/src/System.Text.Json/tests/Serialization)
+* [Examples discussion](https://github.com/dotnet/corefx/issues/36639)
+* [Microsoft Docs on how to Write Custom Converters](https://docs.microsoft.com/en-us/dotnet/standard/serialization/system-text-json-converters-how-to?view=netcore-3.1)
