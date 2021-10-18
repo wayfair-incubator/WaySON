@@ -26,11 +26,10 @@ Please provide the version number where this issue was encountered.
 ## Steps to Reproduce
 
 1. First step
-1. Second step
-1. etc.
+2. Second step
+3. etc.
 
 ## Checklist
 
-<!-- TODO: Update the link below to point to your project's contributing guidelines -->
-- [ ] I have read the [contributing guidelines](https://github.com/wayfair-incubator/oss-template/blob/main/CONTRIBUTING.md)
+- [ ] I have read the [contributing guidelines](https://github.com/wayfair-incubator/wayfair-text-json/blob/main/CONTRIBUTING.md)
 - [ ] I have verified this does not duplicate an existing issue
