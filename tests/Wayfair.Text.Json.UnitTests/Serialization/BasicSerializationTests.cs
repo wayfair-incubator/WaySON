@@ -20,7 +20,7 @@ namespace Wayfair.Text.Json.UnitTests.Serialization
             public string Ignored { get; set; }
         }
 
-        private const string TestJson = "{\"name\":\"name1\",\"value\":222}";
+        private const string TestJson = "{\"name\":\"name1\",\"value\":2232}";
 
         private static readonly TestObject TestObj = new TestObject
         {

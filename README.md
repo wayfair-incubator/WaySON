@@ -100,6 +100,7 @@ Distributed under the `MIT` License. See `LICENSE` for more information.
 
 ## Contact
 
+
 Maintainers: [MAINTAINERS.md](MAINTAINERS.md)
 
 Project Link: [https://github.com/wayfair-incubator/wayfair-text-json](https://github.com/wayfair-incubator/wayfair-text-json)
