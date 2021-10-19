@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Globalization;
 using System.Text.Json.Serialization;
 using FluentAssertions;
 using NUnit.Framework;
@@ -19,10 +20,23 @@ namespace Wayfair.Text.Json.UnitTests.Serialization
         }
 
         [SetUp]
-        [TearDown]
-        public void SetupAndTeardown()
+        public void SetUp()
         {
-            WayfairJsonSerializer.SetFormatOptions(typeof(DateTime), null, null);
+            WayfairJsonSerializer.SetFormatOptions(
+                typeof(DateTime),
+                null,
+                CultureInfo.GetCultureInfo("en-us").DateTimeFormat
+            );
+        }
+
+        [TearDown]
+        public void TearDown()
+        {
+            WayfairJsonSerializer.SetFormatOptions(
+                typeof(DateTime),
+                null,
+                null
+            );
         }
 
         [Test]

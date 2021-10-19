@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Globalization;
 using System.Text.Json.Serialization;
 using FluentAssertions;
 using NUnit.Framework;
@@ -10,10 +11,23 @@ namespace Wayfair.Text.Json.UnitTests.Serialization
     public class DateTimeOffsetSerializationTests
     {
         [SetUp]
+        public void SetUp()
+        {
+            WayfairJsonSerializer.SetFormatOptions(
+                typeof(DateTimeOffset),
+                null,
+                CultureInfo.GetCultureInfo("en-us").DateTimeFormat
+            );
+        }
+
         [TearDown]
         public void SetupAndTeardown()
         {
-            WayfairJsonSerializer.SetFormatOptions(typeof(DateTimeOffset), null, null);
+            WayfairJsonSerializer.SetFormatOptions(
+                typeof(DateTimeOffset),
+                null,
+                null
+            );
         }
 
         private class TestDateTimeOffsetObj
