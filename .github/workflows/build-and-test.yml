@@ -29,7 +29,6 @@ jobs:
         pwd
         ls -a /home/runner/work/wayfair-text-json/wayfair-text-json
 
-    - uses: actions/checkout@master
     - uses: codecov/codecov-action@v2
       with:
         files: /home/runner/work/wayfair-text-json/wayfair-text-json/coverage.opencover.xml
