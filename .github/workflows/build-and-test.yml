@@ -23,8 +23,9 @@ jobs:
       run: cd src && dotnet build --configuration Release --no-restore
     - name: Test
       run: |
+        set -euxo pipefail
         cd ./tests/Wayfair.Text.Json.UnitTests/
-        dotnet test --no-restore /p:CollectCoverage=true /p:CoverletOutput=/home/runner/work/wayfair-text-json/wayfair-text-json /p:CoverletOutputFormat=lcov
+        dotnet test --no-restore /p:CollectCoverage=true /p:CoverletOutput=/home/runner/work/wayfair-text-json/wayfair-text-json/ /p:CoverletOutputFormat=lcov
         pwd
         ls -a /home/runner/work/wayfair-text-json/wayfair-text-json
 
