@@ -17,11 +17,16 @@ jobs:
       uses: actions/setup-dotnet@v1
       with:
         dotnet-version: 5.0.x
-    - name: Restore dependencies
+    - name: Restore Dependencies
       run: cd src && dotnet restore
     - name: Build
       run: cd src && dotnet build --configuration Release --no-restore
     - name: Test
       run: |
         cd ./tests/Wayfair.Text.Json.UnitTests/
-        dotnet test --no-restore /p:CollectCoverage=true /p:CoverletOutput=TestCoverage/ /p:CoverletOutputFormat=lcov
+        dotnet test --no-restore /p:CollectCoverage=true /p:CoverletOutput=/home/runner/work/wayfair-text-json/wayfair-text-json/ /p:CoverletOutputFormat=opencover
+    - name: Publish Code Coverage
+      uses: codecov/codecov-action@v2
+      with:
+        files: /home/runner/work/wayfair-text-json/wayfair-text-json/coverage.opencover.xml
+        fail_ci_if_error: true
