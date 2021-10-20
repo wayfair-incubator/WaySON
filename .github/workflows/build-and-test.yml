@@ -32,7 +32,7 @@ jobs:
     - uses: actions/checkout@master
     - uses: codecov/codecov-action@v2
       with:
-        files: coverage.xml
+        files: coverage.opencover.xml
         name: wayfair-text-json-coverage
         fail_ci_if_error: true
         verbose: true
