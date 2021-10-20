@@ -25,7 +25,8 @@ jobs:
       run: |
         cd ./tests/Wayfair.Text.Json.UnitTests/
         dotnet test --no-restore /p:CollectCoverage=true /p:CoverletOutput=/home/runner/work/wayfair-text-json/wayfair-text-json/ /p:CoverletOutputFormat=opencover
-    - uses: codecov/codecov-action@v2
+    - name: Publish Code Coverage
+      uses: codecov/codecov-action@v2
       with:
         files: /home/runner/work/wayfair-text-json/wayfair-text-json/coverage.opencover.xml
         fail_ci_if_error: true
