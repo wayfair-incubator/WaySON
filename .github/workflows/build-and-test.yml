@@ -26,4 +26,4 @@ jobs:
         cd ./tests/Wayfair.Text.Json.UnitTests/
         dotnet test --no-restore /p:CollectCoverage=true /p:CoverletOutput=TestCoverage/ /p:CoverletOutputFormat=lcov
         pwd
-        ls -a ./tests/Wayfair.Text.Json.UnitTests/TestCoverage/
+        ls -a /home/runner/work/wayfair-text-json/wayfair-text-json/tests/Wayfair.Text.Json.UnitTests/TestCoverage
