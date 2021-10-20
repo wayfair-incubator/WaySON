@@ -17,7 +17,7 @@ jobs:
       uses: actions/setup-dotnet@v1
       with:
         dotnet-version: 5.0.x
-    - name: Restore dependencies
+    - name: Restore Dependencies
       run: cd src && dotnet restore
     - name: Build
       run: cd src && dotnet build --configuration Release --no-restore
@@ -30,4 +30,3 @@ jobs:
       with:
         files: /home/runner/work/wayfair-text-json/wayfair-text-json/coverage.opencover.xml
         fail_ci_if_error: true
-        verbose: true
