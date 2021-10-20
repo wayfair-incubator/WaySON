@@ -25,7 +25,8 @@ jobs:
       run: |
         cd ./tests/Wayfair.Text.Json.UnitTests/
         dotnet test --no-restore /p:CollectCoverage=true /p:CoverletOutput=/home/runner/work/wayfair-text-json/wayfair-text-json /p:CoverletOutputFormat=lcov
-        ls -a /home/runner/work/wayfair-text-json/wayfair-text-json/tests/Wayfair.Text.Json.UnitTests/TestCoverage
+        pwd
+        ls -a /home/runner/work/wayfair-text-json/wayfair-text-json
 
     - uses: actions/checkout@master
     - uses: codecov/codecov-action@v2
