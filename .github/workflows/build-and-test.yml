@@ -25,3 +25,9 @@ jobs:
       run: |
         cd ./tests/Wayfair.Text.Json.UnitTests/
         dotnet test --no-restore /p:CollectCoverage=true /p:CoverletOutput=TestCoverage/ /p:CoverletOutputFormat=lcov
+    - name: Publish Code Coverage to Codecov
+    - uses: codecov/codecov-action@v2
+      with:
+        directory: ./tests/Wayfair.Text.Json.UnitTests/TestCoverage
+        fail_ci_if_error: true
+        verbose: true
