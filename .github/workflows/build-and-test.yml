@@ -23,12 +23,8 @@ jobs:
       run: cd src && dotnet build --configuration Release --no-restore
     - name: Test
       run: |
-        set -euxo pipefail
         cd ./tests/Wayfair.Text.Json.UnitTests/
         dotnet test --no-restore /p:CollectCoverage=true /p:CoverletOutput=/home/runner/work/wayfair-text-json/wayfair-text-json/ /p:CoverletOutputFormat=opencover
-        pwd
-        ls -a /home/runner/work/wayfair-text-json/wayfair-text-json
-
     - uses: codecov/codecov-action@v2
       with:
         files: /home/runner/work/wayfair-text-json/wayfair-text-json/coverage.opencover.xml
