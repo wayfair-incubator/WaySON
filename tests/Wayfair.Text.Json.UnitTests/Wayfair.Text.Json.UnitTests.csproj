@@ -19,4 +19,8 @@
     <ProjectReference Include="..\..\src\Wayfair.Text.Json\Wayfair.Text.Json.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Serialization\" />
+  </ItemGroup>
+
 </Project>
