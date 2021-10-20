@@ -25,10 +25,5 @@ jobs:
       run: |
         cd ./tests/Wayfair.Text.Json.UnitTests/
         dotnet test --no-restore /p:CollectCoverage=true /p:CoverletOutput=TestCoverage/ /p:CoverletOutputFormat=lcov
-
-    - uses: actions/checkout@master
-    - uses: codecov/codecov-action@v2
-      with:
-        files: ./tests/Wayfair.Text.Json.UnitTests/TestCoverage/coverage.info
-        fail_ci_if_error: true
-        verbose: true
+        pwd
+        ls -a ./tests/Wayfair.Text.Json.UnitTests/TestCoverage/
