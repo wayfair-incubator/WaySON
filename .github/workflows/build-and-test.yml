@@ -25,13 +25,13 @@ jobs:
       run: |
         set -euxo pipefail
         cd ./tests/Wayfair.Text.Json.UnitTests/
-        dotnet test --no-restore /p:CollectCoverage=true /p:CoverletOutput=/home/runner/work/wayfair-text-json/wayfair-text-json/ /p:CoverletOutputFormat='coverage.xml'
+        dotnet test --no-restore /p:CollectCoverage=true /p:CoverletOutput=/home/runner/work/wayfair-text-json/wayfair-text-json/ /p:CoverletOutputFormat=opencover
         pwd
         ls -a /home/runner/work/wayfair-text-json/wayfair-text-json
 
     - uses: actions/checkout@master
     - uses: codecov/codecov-action@v2
       with:
-        files: coverage.xml
+        files: /home/runner/work/wayfair-text-json/wayfair-text-json/coverage.opencover.xml
         fail_ci_if_error: true
         verbose: true
