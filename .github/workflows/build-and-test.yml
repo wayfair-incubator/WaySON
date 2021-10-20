@@ -29,6 +29,6 @@ jobs:
     - uses: actions/checkout@master
     - uses: codecov/codecov-action@v2
       with:
-        directory: ./tests/Wayfair.Text.Json.UnitTests/TestCoverage
+        files: ./tests/Wayfair.Text.Json.UnitTests/TestCoverage/coverage.info
         fail_ci_if_error: true
         verbose: true
