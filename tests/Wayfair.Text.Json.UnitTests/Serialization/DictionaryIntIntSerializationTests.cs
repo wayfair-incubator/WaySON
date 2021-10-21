@@ -20,35 +20,6 @@ namespace Wayfair.Text.Json.UnitTests.Serialization
         }
 
         [Test]
-        public void Can_Deserialize_DictionaryIntInt_Into_Object_NonQuoted()
-        {
-            // arrange
-            const string json = @"
-                    {
-                        ""Name"":""name1"",
-                        ""Dict"":
-                        {
-                            ""1"":1,
-                            ""2"":2
-                        }
-                    }
-                    ";
-
-            var expectedDictionary = new Dictionary<int, int>
-            {
-                { 1, 1 },
-                { 2, 2 }
-            };
-
-            // act
-            var testDictIntIntObj = WayfairJsonSerializer.Deserialize<TestDictIntIntObj>(json);
-
-            // assert
-            testDictIntIntObj.Name.Should().Be("name1");
-            testDictIntIntObj.Dict.Should().BeEquivalentTo(expectedDictionary);
-        }
-
-        [Test]
         public void Can_Deserialize_DictionaryIntInt_Into_Object_Quoted()
         {
             // arrange
