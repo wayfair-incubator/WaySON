@@ -2,6 +2,7 @@
 
 [![Wayfair.Text.Json Version](https://img.shields.io/badge/Wayfair.Text.Json-0.1.0-7f187f.svg)](https://github.com/wayfair-incubator/wayfair-text-json/blob/main/CHANGELOG.md)
 [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.0-4baaaa.svg)](CODE_OF_CONDUCT.md)
+[![codecov](https://codecov.io/gh/wayfair-incubator/wayfair-text-json/branch/main/graph/badge.svg?token=DAHTIyeMLE)](https://codecov.io/gh/wayfair-incubator/wayfair-text-json)
 
 ## About this project
 
