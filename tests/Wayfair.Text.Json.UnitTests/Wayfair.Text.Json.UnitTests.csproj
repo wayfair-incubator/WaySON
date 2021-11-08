@@ -20,6 +20,10 @@
   </ItemGroup>
 
   <PropertyGroup>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+  </PropertyGroup>
+
+  <PropertyGroup>
     <DocumentationFile>obj\$(Platform)\net5.0\$(AssemblyName).xml</DocumentationFile>
   </PropertyGroup>
 
