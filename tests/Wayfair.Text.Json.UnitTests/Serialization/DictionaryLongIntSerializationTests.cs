@@ -1,8 +1,8 @@
-﻿using System.Collections.Generic;
+﻿using FluentAssertions;
+using NUnit.Framework;
+using System.Collections.Generic;
 using System.Text.Json;
 using System.Text.Json.Serialization;
-using FluentAssertions;
-using NUnit.Framework;
 using Wayfair.Text.Json.Serializers;
 
 namespace Wayfair.Text.Json.UnitTests.Serialization
@@ -153,7 +153,6 @@ namespace Wayfair.Text.Json.UnitTests.Serialization
                         }
                     }
                     ";
-
 
             var expectedDictionary = new Dictionary<long, int>
             {

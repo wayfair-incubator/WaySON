@@ -1,6 +1,6 @@
-using System.Collections.Generic;
 using FluentAssertions;
 using NUnit.Framework;
+using System.Collections.Generic;
 using Wayfair.Text.Json.Binders;
 
 namespace Wayfair.Text.Json.UnitTests.Binders
@@ -11,8 +11,11 @@ namespace Wayfair.Text.Json.UnitTests.Binders
         private class TestConfig
         {
             public int One { get; set; }
+
             public int Two { get; set; }
+
             public int Three { get; set; }
+
             public string Four { get; set; }
         }
 
@@ -105,7 +108,9 @@ namespace Wayfair.Text.Json.UnitTests.Binders
         private class OuterTestConfig
         {
             public int One { get; set; }
+
             public TestConfig Config { get; set; }
+
             public Dictionary<string, string> Dictionary { get; set; }
 
             public OuterTestConfig()

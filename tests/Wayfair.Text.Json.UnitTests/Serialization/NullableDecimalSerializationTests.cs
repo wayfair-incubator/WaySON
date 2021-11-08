@@ -5,7 +5,7 @@ using Wayfair.Text.Json.Serializers;
 namespace Wayfair.Text.Json.UnitTests.Serialization
 {
     [TestFixture]
-    public class NullableDecimalTests
+    public class NullableDecimalSerializationTests
     {
         [Test]
         public void Can_Deserialize_Nullable_Decimal_From_Null()

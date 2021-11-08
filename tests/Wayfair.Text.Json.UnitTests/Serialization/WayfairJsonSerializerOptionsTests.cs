@@ -1,8 +1,8 @@
+using FluentAssertions;
+using NUnit.Framework;
 using System;
 using System.Collections.Generic;
 using System.Globalization;
-using FluentAssertions;
-using NUnit.Framework;
 using Wayfair.Text.Json.Serializers;
 
 namespace Wayfair.Text.Json.UnitTests.Serialization
@@ -109,8 +109,7 @@ namespace Wayfair.Text.Json.UnitTests.Serialization
             // act + assert
             Assert.Throws(
                 typeof(FormatException),
-                () => WayfairJsonSerializer.Deserialize<DateTimeOffset>(dateAsString)
-            );
+                () => WayfairJsonSerializer.Deserialize<DateTimeOffset>(dateAsString));
         }
 
         [Test]
@@ -126,8 +125,7 @@ namespace Wayfair.Text.Json.UnitTests.Serialization
             // act + assert
             Assert.Throws(
                 typeof(FormatException),
-                () => WayfairJsonSerializer.Deserialize<DateTimeOffset>(dateAsString)
-            );
+                () => WayfairJsonSerializer.Deserialize<DateTimeOffset>(dateAsString));
         }
     }
 }

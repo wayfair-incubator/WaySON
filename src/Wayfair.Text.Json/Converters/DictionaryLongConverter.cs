@@ -42,8 +42,7 @@ namespace Wayfair.Text.Json.Converters
                 BindingFlags.Instance | BindingFlags.Public,
                 binder: null,
                 args: new object[] { options },
-                culture: null
-            );
+                culture: null);
 
             return converter;
         }
@@ -85,8 +84,7 @@ namespace Wayfair.Text.Json.Converters
                     if (reader.TokenType != JsonTokenType.PropertyName)
                     {
                         throw new JsonException(
-                            $"Malformed JSON: Expected {JsonTokenType.PropertyName} token type, found {reader.TokenType}."
-                        );
+                            $"Malformed JSON: Expected {JsonTokenType.PropertyName} token type, found {reader.TokenType}.");
                     }
 
                     var propertyName = reader.GetString();

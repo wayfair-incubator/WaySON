@@ -1,7 +1,7 @@
-﻿using System.Text.Json;
-using System.Text.Json.Serialization;
-using FluentAssertions;
+﻿using FluentAssertions;
 using NUnit.Framework;
+using System.Text.Json;
+using System.Text.Json.Serialization;
 using Wayfair.Text.Json.Serializers;
 
 namespace Wayfair.Text.Json.UnitTests.Serialization
@@ -103,7 +103,6 @@ namespace Wayfair.Text.Json.UnitTests.Serialization
             {
                 exceptionThrown = true;
             }
-            
 
             // assert
             exceptionThrown.Should().BeTrue("because an invalid enum string was passed");

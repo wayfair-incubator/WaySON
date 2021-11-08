@@ -15,8 +15,7 @@ namespace Wayfair.Text.Json.Serializers
     public sealed class WayfairJsonSerializer
     {
         private static readonly Lazy<WayfairJsonSerializer> LazyInstance = new Lazy<WayfairJsonSerializer>(
-            () => new WayfairJsonSerializer()
-        );
+            () => new WayfairJsonSerializer());
 
         private JsonSerializerOptions _options;
 
@@ -129,7 +128,7 @@ namespace Wayfair.Text.Json.Serializers
         /// <param name="value">JSON string</param>
         /// <param name="type">The type to deserialize into</param>
         /// <returns>Object of type "type"</returns>
-        public static object Deserialize<T>(string value, Type type)
+        public static object Deserialize(string value, Type type)
         {
             return JsonSerializer.Deserialize(value, type, Serializer()._options);
         }

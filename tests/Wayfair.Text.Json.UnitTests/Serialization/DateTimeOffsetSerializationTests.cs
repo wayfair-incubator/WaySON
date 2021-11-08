@@ -1,8 +1,8 @@
-﻿using System;
+﻿using FluentAssertions;
+using NUnit.Framework;
+using System;
 using System.Globalization;
 using System.Text.Json.Serialization;
-using FluentAssertions;
-using NUnit.Framework;
 using Wayfair.Text.Json.Serializers;
 
 namespace Wayfair.Text.Json.UnitTests.Serialization
@@ -16,8 +16,7 @@ namespace Wayfair.Text.Json.UnitTests.Serialization
             WayfairJsonSerializer.SetFormatOptions(
                 typeof(DateTimeOffset),
                 null,
-                CultureInfo.GetCultureInfo("en-us").DateTimeFormat
-            );
+                CultureInfo.GetCultureInfo("en-us").DateTimeFormat);
         }
 
         [TearDown]
@@ -26,8 +25,7 @@ namespace Wayfair.Text.Json.UnitTests.Serialization
             WayfairJsonSerializer.SetFormatOptions(
                 typeof(DateTimeOffset),
                 null,
-                null
-            );
+                null);
         }
 
         private class TestDateTimeOffsetObj
