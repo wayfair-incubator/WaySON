@@ -13,6 +13,10 @@
     <PackageTags>json, serialization, deserialization, wayfair.text.json</PackageTags>
   </PropertyGroup>
 
+  <PropertyGroup>
+    <DocumentationFile>obj\$(Platform)\netcoreapp2.0\$(AssemblyName).xml</DocumentationFile>
+  </PropertyGroup>
+
   <ItemGroup>
     <None Remove="stylecop.json" />
   </ItemGroup>
