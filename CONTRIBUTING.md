@@ -28,7 +28,9 @@ Before sending a new pull request, take a look at existing pull requests and iss
 has been discussed in the past, or if the change was already implemented but not yet released.
 
 We expect new pull requests to include tests for any affected behavior, and, as we follow semantic versioning, we may
-reserve breaking changes until the next major version release.
+reserve breaking changes until the next major version release. Note that all proposed code changes must follow the
+linting rules laid out by [StyleCop.Analyzers](https://github.com/DotNetAnalyzers/StyleCopAnalyzers), which are enforced
+in our CI pipelines.
 
 ## Other Ways to Contribute
 

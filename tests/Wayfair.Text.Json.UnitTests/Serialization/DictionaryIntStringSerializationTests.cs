@@ -1,8 +1,8 @@
-﻿using System.Collections.Generic;
+﻿using FluentAssertions;
+using NUnit.Framework;
+using System.Collections.Generic;
 using System.Text.Json;
 using System.Text.Json.Serialization;
-using FluentAssertions;
-using NUnit.Framework;
 using Wayfair.Text.Json.Serializers;
 
 namespace Wayfair.Text.Json.UnitTests.Serialization
@@ -138,7 +138,6 @@ namespace Wayfair.Text.Json.UnitTests.Serialization
             // assert
             exceptionThrown.Should().BeTrue("because the dictionary JSON contained no EndObject");
         }
-
 
         [Test]
         public void Can_Serialize_Dictionary()

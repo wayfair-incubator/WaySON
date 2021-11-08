@@ -1,8 +1,8 @@
-﻿using System.Collections.Generic;
+﻿using FluentAssertions;
+using NUnit.Framework;
+using System.Collections.Generic;
 using System.Text.Json;
 using System.Text.Json.Serialization;
-using FluentAssertions;
-using NUnit.Framework;
 using Wayfair.Text.Json.Serializers;
 
 namespace Wayfair.Text.Json.UnitTests.Serialization
@@ -76,7 +76,6 @@ namespace Wayfair.Text.Json.UnitTests.Serialization
             testDictIntIntObj.Name.Should().Be("name1");
             testDictIntIntObj.Dict.Should().BeEquivalentTo(expectedDictionary);
         }
-
 
         [Test]
         public void Deserializing_Dictionary_With_Bad_Key_Throws_JsonException()

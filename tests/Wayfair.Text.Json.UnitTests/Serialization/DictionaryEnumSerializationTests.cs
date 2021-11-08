@@ -1,7 +1,7 @@
-﻿using System.Collections.Generic;
-using System.Text.Json;
-using FluentAssertions;
+﻿using FluentAssertions;
 using NUnit.Framework;
+using System.Collections.Generic;
+using System.Text.Json;
 using Wayfair.Text.Json.Serializers;
 
 namespace Wayfair.Text.Json.UnitTests.Serialization

@@ -30,14 +30,14 @@ namespace Wayfair.Text.Json.Converters
                 BindingFlags.Instance | BindingFlags.Public,
                 binder: null,
                 args: new object[] { options },
-                culture: null
-            );
+                culture: null);
 
             return converter;
         }
 
         /// <inheritdoc />
-        private class EnumConverterInner<T> : JsonConverter<T> where T : struct, Enum
+        private class EnumConverterInner<T> : JsonConverter<T>
+            where T : struct, Enum
         {
             public EnumConverterInner(JsonSerializerOptions options) { }
 

@@ -44,8 +44,7 @@ namespace Wayfair.Text.Json.Converters
                 BindingFlags.Instance | BindingFlags.Public,
                 binder: null,
                 args: new object[] { options },
-                culture: null
-            );
+                culture: null);
 
             return converter;
         }
