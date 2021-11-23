@@ -10,11 +10,9 @@ on:
     - "v[0-9]+.[0-9]+.[0-9]+-rc-[0-9]+"
 
 jobs:
-
   preview:
 
     runs-on: ubuntu-latest
-
 
     steps:
     - uses: actions/checkout@v2
@@ -30,9 +28,7 @@ jobs:
       run: echo "VERSION=${GITHUB_REF/refs\/tags\/v/}" >> $GITHUB_ENV
     - name: Pack NuGet
       run: dotnet pack src --no-build --configuration Release /p:Version=${VERSION} --output src
-    - name: Check Output
-      run: cd src && ls -a
-    # - name: Publish NuGet
-    #   run: cd src && dotnet nuget push *.nupkg --source https://api.nuget.org/v3/index.json --api-key ${NUGET_KEY} --skip-duplicate
-    #   env:
-    #     NUGET_KEY: ${{ secrets.NUGET_API_KEY }}
+    - name: Publish NuGet
+      run: dotnet nuget push src/*.nupkg --source https://api.nuget.org/v3/index.json --api-key ${NUGET_KEY} --skip-duplicate
+      env:
+        NUGET_KEY: ${{ secrets.NUGET_API_KEY }}
