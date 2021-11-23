@@ -7,6 +7,7 @@
     <Authors>Wayfair</Authors>
     <Description>Extends the basic JSON Serialization/Deserialization functionality of System.Text.Json.</Description>
     <Copyright>Wayfair ©2021</Copyright>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
     <PackageProjectUrl>https://github.com/wayfair-incubator/wayfair-text-json</PackageProjectUrl>
     <RepositoryUrl>https://github.com/wayfair-incubator/wayfair-text-json</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
@@ -19,10 +20,15 @@
 
   <PropertyGroup>
     <DocumentationFile>obj\$(Platform)\netcoreapp2.0\$(AssemblyName).xml</DocumentationFile>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
   </PropertyGroup>
 
   <ItemGroup>
     <None Remove="stylecop.json" />
+    <None Include="..\..\LICENSE">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
   </ItemGroup>
 
   <ItemGroup>
