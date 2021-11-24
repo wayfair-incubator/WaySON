@@ -1,7 +1,7 @@
 # Security Policies and Procedures
 
 This document outlines security procedures and general policies for the
-`Wayfair.Text.Json` project.
+`WaySON` project.
 
 - [Reporting a Bug](#reporting-a-bug)
 - [Disclosure Policy](#disclosure-policy)
@@ -9,9 +9,9 @@ This document outlines security procedures and general policies for the
 
 ## Reporting a Bug
 
-The `Wayfair.Text.Json` team and community take all security bugs in
-`Wayfair.Text.Json` seriously.  Thank you for improving the security of
-`Wayfair.Text.Json`. We appreciate your efforts and responsible disclosure and
+The `WaySON` team and community take all security bugs in
+`WaySON` seriously.  Thank you for improving the security of
+`WaySON`. We appreciate your efforts and responsible disclosure and
 will make every effort to acknowledge your contributions.
 
 Report security bugs by emailing `OpenSource@wayfair.com`.
