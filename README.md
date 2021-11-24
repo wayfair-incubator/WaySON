@@ -1,6 +1,6 @@
-# Wayfair.Text.Json
+# WaySON
 
-[![Wayfair.Text.Json Version](https://img.shields.io/badge/Wayfair.Text.Json-0.1.0-7f187f.svg)](https://github.com/wayfair-incubator/wayfair-text-json/blob/main/CHANGELOG.md)
+[![WaySON Version](https://img.shields.io/badge/WaySON-0.1.0-7f187f.svg)](https://github.com/wayfair-incubator/wayfair-text-json/blob/main/CHANGELOG.md)
 [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.0-4baaaa.svg)](CODE_OF_CONDUCT.md)
 [![.NET Build & Test](https://github.com/wayfair-incubator/wayfair-text-json/actions/workflows/build-and-test.yml/badge.svg?branch=main)](https://github.com/wayfair-incubator/wayfair-text-json/actions/workflows/build-and-test.yml)
 [![Lint Markdown files](https://github.com/wayfair-incubator/wayfair-text-json/actions/workflows/markdown-lint.yml/badge.svg?branch=main)](https://github.com/wayfair-incubator/wayfair-text-json/actions/workflows/markdown-lint.yml)
@@ -22,30 +22,30 @@ Extends the basic JSON Serialization/Deserialization functionality of [System.Te
 ## Installation
 
 ```sh
-dotnet add package Wayfair.Text.Json
+dotnet add package WaySON
 ```
 
 ## Usage
 
 There are three ways this package can be used:
 
-1. Explicit calls to `WayfairJsonSerializer.Serialize` and `WayfairJsonSerializer.Deserialize` methods
+1. Explicit calls to `WaySON.Serialize` and `WaySONSerializer.Deserialize` methods
 2. Configuration of .NET's MVC framework using `.AddJsonOptions(...)` in startup
 3. Calls to `JsonBinder.BindToObject` for scenarios when you already have an existing object instance on hand to bind values to
 
-### WayfairJsonSerializer
+### WaySONSerializer
 
 Use this instead of calling the native `JsonSerializer` methods if you need to make an explicit call to `Serialize`/`Deserialize`:
 
 ```csharp
 // To Serialize object to json:
-var json = WayfairJsonSerializer.Serialize(obj);
+var json = WaySONSerializer.Serialize(obj);
 
 // To Deserialize json to object of type T:
-var obj = WayfairJsonSerializer.Deserialize<T>(json);
+var obj = WaySONSerializer.Deserialize<T>(json);
 
 // or if you don't know the type at compile time: 
-var obj = WayfairJsonSerializer.Deserialize(json, type);
+var obj = WaySONSerializer.Deserialize(json, type);
 ```
 
 ### MVC
@@ -57,13 +57,13 @@ services
     .AddMvcCore()
     .AddJsonOptions(options =>
     {
-        // You can choose which options to use. Here, we use the default ones set in WayfairJsonSerializer.
-        options.JsonSerializerOptions.PropertyNamingPolicy = WayfairJsonSerializer.Options().PropertyNamingPolicy;
-        options.JsonSerializerOptions.PropertyNameCaseInsensitive = WayfairJsonSerializer.Options().PropertyNameCaseInsensitive;
+        // You can choose which options to use. Here, we use the default ones set in WaySONSerializer.
+        options.JsonSerializerOptions.PropertyNamingPolicy = WaySONSerializer.Options().PropertyNamingPolicy;
+        options.JsonSerializerOptions.PropertyNameCaseInsensitive = WaySONSerializer.Options().PropertyNameCaseInsensitive;
         
-        // Add custom converters. Here, we add all the custom converters in WayfairJsonSerializer, then add another custom MyTypeConverter
+        // Add custom converters. Here, we add all the custom converters in WaySONSerializer, then add another custom MyTypeConverter
         // You can add more, or filter some out by not adding them.
-        foreach (var jsonConverter in WayfairJsonSerializer.Options().JsonConverters())
+        foreach (var jsonConverter in WaySONSerializer.Options().JsonConverters())
         {
             options.JsonSerializerOptions.Converters.Add(jsonConverter);
         }

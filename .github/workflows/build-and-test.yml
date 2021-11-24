@@ -23,7 +23,7 @@ jobs:
       run: cd src && dotnet build --configuration Release --no-restore
     - name: Test
       run: |
-        cd ./tests/Wayfair.Text.Json.UnitTests/
+        cd ./tests/WaySON.UnitTests/
         dotnet test --no-restore /p:CollectCoverage=true /p:CoverletOutput=/home/runner/work/wayfair-text-json/wayfair-text-json/ /p:CoverletOutputFormat=opencover
     - name: Publish Code Coverage
       uses: codecov/codecov-action@v2
