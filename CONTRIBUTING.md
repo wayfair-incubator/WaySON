@@ -1,6 +1,6 @@
 # How to Contribute
 
-Thanks for your interest in contributing to `Wayfair.Text.Json`! Here are a few general guidelines on contributing and
+Thanks for your interest in contributing to `WaySON`! Here are a few general guidelines on contributing and
 reporting bugs that we ask you to review. Following these guidelines helps to communicate that you respect the time of
 the contributors managing and developing this open source project. In return, they should reciprocate that respect in
 addressing your issue, assessing changes, and helping you finalize your pull requests. In that spirit of mutual respect,
@@ -34,16 +34,16 @@ in our CI pipelines.
 
 ## Other Ways to Contribute
 
-We welcome anyone that wants to contribute to `Wayfair.Text.Json` to triage and reply to open issues to help troubleshoot
+We welcome anyone that wants to contribute to `WaySON` to triage and reply to open issues to help troubleshoot
 and fix existing bugs. Here is what you can do:
 
 - Help ensure that existing issues follows the recommendations from the _[Reporting Issues](#reporting-issues)_ section,
   providing feedback to the issue's author on what might be missing.
 - Review and update the existing content of our [Wiki](https://github.com/wayfair-incubator/wayfair-text-json/wiki) with up-to-date
   instructions and code samples.
-- Review existing pull requests, and testing patches against real existing applications that use `Wayfair.Text.Json`.
+- Review existing pull requests, and testing patches against real existing applications that use `WaySON`.
 - Write a test, or add a missing test case to an existing test.
 
-Thanks again for your interest on contributing to `Wayfair.Text.Json`!
+Thanks again for your interest on contributing to `WaySON`!
 
 :heart:
