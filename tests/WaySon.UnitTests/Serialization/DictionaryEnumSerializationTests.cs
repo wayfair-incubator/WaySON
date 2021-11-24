@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Text.Json;
 using WaySON.Serializers;
 
-namespace Wayson.UnitTests.Serialization
+namespace WaySON.UnitTests.Serialization
 {
     [TestFixture]
     public class DictionaryEnumSerializationTests

@@ -3,7 +3,7 @@ using NUnit.Framework;
 using System.Collections.Generic;
 using WaySON.Serializers;
 
-namespace Wayson.UnitTests.Serialization
+namespace WaySON.UnitTests.Serialization
 {
     [TestFixture]
     public class NestedDictionarySerializationTests

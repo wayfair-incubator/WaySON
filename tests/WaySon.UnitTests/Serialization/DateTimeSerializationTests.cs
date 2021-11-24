@@ -5,7 +5,7 @@ using System.Globalization;
 using System.Text.Json.Serialization;
 using WaySON.Serializers;
 
-namespace Wayson.UnitTests.Serialization
+namespace WaySON.UnitTests.Serialization
 {
     [TestFixture]
     public class DateTimeSerializationTests

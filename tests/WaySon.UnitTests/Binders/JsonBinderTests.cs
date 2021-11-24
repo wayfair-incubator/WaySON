@@ -3,7 +3,7 @@ using NUnit.Framework;
 using System.Collections.Generic;
 using WaySON.Binders;
 
-namespace Wayson.UnitTests.Binders
+namespace WaySON.UnitTests.Binders
 {
     [TestFixture]
     public class JsonBinderTests
