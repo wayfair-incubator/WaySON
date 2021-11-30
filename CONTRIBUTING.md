@@ -32,6 +32,10 @@ reserve breaking changes until the next major version release. Note that all pro
 linting rules laid out by [StyleCop.Analyzers](https://github.com/DotNetAnalyzers/StyleCopAnalyzers), which are enforced
 in our CI pipelines.
 
+## Releasing
+
+To release a new version of WaySON, follow the documentation found in [RELEASING](RELEASING.md).
+
 ## Other Ways to Contribute
 
 We welcome anyone that wants to contribute to `WaySON` to triage and reply to open issues to help troubleshoot
