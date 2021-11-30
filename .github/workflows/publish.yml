@@ -25,5 +25,5 @@ jobs:
     - name: Publish NuGet
       uses: brandedoutcast/publish-nuget@v2.5.5
       with:
-        PROJECT_FILE_PATH: src/Wayfair.Text.Json/Wayfair.Text.Json.csproj
+        PROJECT_FILE_PATH: src/WaySON/WaySON.csproj
         NUGET_KEY: ${{secrets.NUGET_API_KEY}}
