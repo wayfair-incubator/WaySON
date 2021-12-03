@@ -18,7 +18,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   * `Microsoft.Extensions.Configuration.Json`: v3.1.20 => v6.0.0
   * `Microsoft.Extensions.Options.ConfigurationExtensions`: v3.1.20 => v6.0.0
 
-
 ## [1.0.0] - 2021-11-30
 
 Initial release, with `WaySONSerializer`, `JsonBinder`, and `IServiceCollection` extensions.
