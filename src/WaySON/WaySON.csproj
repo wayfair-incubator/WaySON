@@ -8,8 +8,8 @@
     <Description>Extends the basic JSON Serialization/Deserialization functionality of System.Text.Json.</Description>
     <Copyright>Wayfair ©2021</Copyright>
     <PackageLicenseFile>LICENSE</PackageLicenseFile>
-    <PackageProjectUrl>https://github.com/wayfair-incubator/wayfair-text-json</PackageProjectUrl>
-    <RepositoryUrl>https://github.com/wayfair-incubator/wayfair-text-json</RepositoryUrl>
+    <PackageProjectUrl>https://github.com/wayfair-incubator/wayson</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/wayfair-incubator/wayson</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <PackageTags>json, serialization, deserialization, wayson</PackageTags>
   </PropertyGroup>

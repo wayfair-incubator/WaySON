@@ -1,10 +1,10 @@
 # WaySON
 
-[![WaySON Version](https://img.shields.io/badge/WaySON-0.1.0-7f187f.svg)](https://github.com/wayfair-incubator/wayfair-text-json/blob/main/CHANGELOG.md)
+[![WaySON Version](https://img.shields.io/badge/WaySON-0.1.0-7f187f.svg)](https://github.com/wayfair-incubator/wayson/blob/main/CHANGELOG.md)
 [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.0-4baaaa.svg)](CODE_OF_CONDUCT.md)
-[![.NET Build & Test](https://github.com/wayfair-incubator/wayfair-text-json/actions/workflows/build-and-test.yml/badge.svg?branch=main)](https://github.com/wayfair-incubator/wayfair-text-json/actions/workflows/build-and-test.yml)
-[![Lint Markdown files](https://github.com/wayfair-incubator/wayfair-text-json/actions/workflows/markdown-lint.yml/badge.svg?branch=main)](https://github.com/wayfair-incubator/wayfair-text-json/actions/workflows/markdown-lint.yml)
-[![codecov](https://codecov.io/gh/wayfair-incubator/wayfair-text-json/branch/main/graph/badge.svg?token=DAHTIyeMLE)](https://codecov.io/gh/wayfair-incubator/wayfair-text-json)
+[![.NET Build & Test](https://github.com/wayfair-incubator/wayson/actions/workflows/build-and-test.yml/badge.svg?branch=main)](https://github.com/wayfair-incubator/wayson/actions/workflows/build-and-test.yml)
+[![Lint Markdown files](https://github.com/wayfair-incubator/wayson/actions/workflows/markdown-lint.yml/badge.svg?branch=main)](https://github.com/wayfair-incubator/wayson/actions/workflows/markdown-lint.yml)
+[![codecov](https://codecov.io/gh/wayfair-incubator/wayson/branch/main/graph/badge.svg?token=DAHTIyeMLE)](https://codecov.io/gh/wayfair-incubator/wayson)
 
 ## About this project
 
@@ -91,7 +91,7 @@ dictionary = JsonBinder.BindToObject(dictionary, json);
 
 ## Roadmap
 
-See the [open issues](https://github.com/wayfair-incubator/wayfair-text-json/issues) for a list of proposed features (and known issues).
+See the [open issues](https://github.com/wayfair-incubator/wayson/issues) for a list of proposed features (and known issues).
 
 ## Contributing
 
@@ -105,7 +105,7 @@ Distributed under the `MIT` License. See `LICENSE` for more information.
 
 Maintainers: [MAINTAINERS.md](MAINTAINERS.md)
 
-Project Link: [https://github.com/wayfair-incubator/wayfair-text-json](https://github.com/wayfair-incubator/wayfair-text-json)
+Project Link: [https://github.com/wayfair-incubator/wayson](https://github.com/wayfair-incubator/wayson)
 
 ## Acknowledgements
 
