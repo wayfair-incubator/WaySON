@@ -1,6 +1,6 @@
 # WaySON
 
-[![WaySON Version](https://img.shields.io/github/v/tag/wayfair-incubator/wayfair-text-json?label=WaySON)](https://github.com/wayfair-incubator/wayfair-text-json/blob/main/CHANGELOG.md)
+[![WaySON Version](https://img.shields.io/nuget/v/tag/WaySON?label=WaySON)](https://github.com/wayfair-incubator/wayfair-text-json/blob/main/CHANGELOG.md)
 [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.0-4baaaa.svg)](CODE_OF_CONDUCT.md)
 [![.NET Build & Test](https://github.com/wayfair-incubator/wayfair-text-json/actions/workflows/build-and-test.yml/badge.svg?branch=main)](https://github.com/wayfair-incubator/wayfair-text-json/actions/workflows/build-and-test.yml)
 [![Lint Markdown files](https://github.com/wayfair-incubator/wayfair-text-json/actions/workflows/markdown-lint.yml/badge.svg?branch=main)](https://github.com/wayfair-incubator/wayfair-text-json/actions/workflows/markdown-lint.yml)
