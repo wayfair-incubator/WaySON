@@ -63,7 +63,7 @@ services
         
         // Add custom converters. Here, we add all the custom converters in WaySONSerializer, then add another custom MyTypeConverter
         // You can add more, or filter some out by not adding them.
-        foreach (var jsonConverter in WaySONSerializer.Options().JsonConverters())
+        foreach (var jsonConverter in WaySONSerializer.Options().Converters)
         {
             options.JsonSerializerOptions.Converters.Add(jsonConverter);
         }
