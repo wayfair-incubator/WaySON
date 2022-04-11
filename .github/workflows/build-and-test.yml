@@ -26,7 +26,7 @@ jobs:
         cd ./tests/WaySON.UnitTests/
         dotnet test --no-restore /p:CollectCoverage=true /p:CoverletOutput=/home/runner/work/WaySON/WaySON/ /p:CoverletOutputFormat=opencover
     - name: Publish Code Coverage
-      uses: codecov/codecov-action@v2
+      uses: codecov/codecov-action@v3
       with:
         files: /home/runner/work/WaySON/WaySON/coverage.opencover.xml
         fail_ci_if_error: true
