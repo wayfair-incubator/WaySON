@@ -1,6 +1,10 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "description": "Renovate configuration for WAYSON",
   "extends": [
     "config:base"
+  ],
+  "schedule": [
+    "before 9am on Monday"
   ]
 }
