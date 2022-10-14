@@ -1,3 +1,6 @@
+name: Renovate Config Linting
+on: [pull_request]
+
 jobs:
   renovate:
     runs-on: ubuntu-latest
