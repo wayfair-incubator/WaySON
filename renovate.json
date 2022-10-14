@@ -6,5 +6,52 @@
   ],
   "schedule": [
     "before 9am on Monday"
+  ],
+  "packageRules": [
+    {
+      "matchManagers": [
+        "github-actions"
+      ],
+      "groupName": "GitHub Actions",
+      "addLabels": [
+        "actions"
+      ]
+    },
+    {
+      "matchManagers": [
+        "docker-compose"
+      ],
+      "groupName": "Docker",
+      "addLabels": [
+        "docker"
+      ]
+    },
+    {
+      "matchManagers": [
+        "nuget"
+      ],
+      "matchUpdateTypes": [
+        "minor",
+        "patch"
+      ],
+      "addLabels": [
+        "non-breaking",
+        "cut new release"
+      ],
+      "groupName": "NuGet Packages - Minor Updates"
+    },
+    {
+      "matchManagers": [
+        "nuget"
+      ],
+      "matchUpdateTypes": [
+        "major"
+      ],
+      "addLabels": [
+        "breaking",
+        "cut new release"
+      ],
+      "groupName": "NuGet Packages - Major Updates"
+    }
   ]
 }
