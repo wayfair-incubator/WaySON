@@ -1,5 +1,5 @@
 {
-  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "$schema": "https://docs.renovatdebot.com/renovate-schema.json",
   "description": "Renovate configuration for WAYSON",
   "extends": [
     "config:base"
@@ -15,15 +15,6 @@
       "groupName": "GitHub Actions",
       "addLabels": [
         "actions"
-      ]
-    },
-    {
-      "matchManagers": [
-        "docker-compose"
-      ],
-      "groupName": "Docker",
-      "addLabels": [
-        "docker"
       ]
     },
     {
